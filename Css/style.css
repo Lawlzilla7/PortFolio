@@ -1,8 +1,15 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
     padding: 0;
     margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
@@ -10,12 +17,13 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
-    background-color: whitesmoke;
+    padding: 10px 50px;
+    box-shadow: 0 1px 8px #ffffff;
+    background-color: rgb(56, 56, 56);
+    z-index: 2;
 }
 
-.Title {
+.TitleHeader {
     margin-right: auto;
     font-size: 1.5em;
 }
@@ -23,23 +31,95 @@ header {
 header li {
     list-style: none;
     display: inline-block;
-    padding: 0 20px;
+    padding: 0px 10px;
 }
 
 header a {
     text-decoration: none;
-    color: #555;
+    color: #ffffff;
+    font-size: 20pt;
+    padding: 0;
     transition: all 0.3s ease 0s;
 }
 
 header a:hover {
-    color: #b2dfdb;
+    color: var(--g1);
 }
 
-main
+#ProjectsPage
 {
-    background-color: rgb(241, 142, 12);
+    background-color: aqua;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
 }
 
+/* Main  */
+#FrontPage{
+    animation: Background-Pan 10s linear infinite;
+    background: linear-gradient(to right,
+            var(--g1),
+            var(--g2),
+            var(--g1));
+    background-size: 200%;
 
-  
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+@keyframes Background-Pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+:root {
+    --g1: #00d2ff;
+    --g2: #3a47d5;
+}
+
+/* Tiles */
+#Tiles {
+    height: calc(100vh - 1px);
+    width: calc(100vw - 1px);
+    position: relative;
+    z-index: 2;
+
+    /* background-color: #000000; */
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+.Tile {
+    position: relative;
+}
+
+.Tile::before {
+    background-color: rgb(20, 20, 20);
+    content: "";
+    position: absolute;
+    inset: 0.5px;
+}
+
+#Title {
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 90pt;
+    pointer-events: none;
+    transition: opacity 1200ms ease;
+    width: 50vw;
+    z-index: 3;
+}
+
+.Centered {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
