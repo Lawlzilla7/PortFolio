@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -12,15 +12,23 @@
     padding: 0;
 }
 
+#HideScroll
+{
+    overflow-x: hidden;
+    user-select: none;
+}
+
 /* Header */
 header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px 50px;
-    box-shadow: 0 1px 8px #ffffff;
+    box-shadow: 0 1px 8px #000000;
     background-color: rgb(56, 56, 56);
-    z-index: 2;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
 }
 
 .TitleHeader {
@@ -46,16 +54,56 @@ header a:hover {
     color: var(--g1);
 }
 
-#ProjectsPage
-{
-    background-color: aqua;
-    height: 100%;
+
+#ProjectsPage {
+    background-color: #141414;
+    
+
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
     margin: 0px;
+    padding-top: 70px;
 }
 
+.ProjectsText {
+    color: #ffffff;
+    font-size: 60pt;
+}
+
+.TextContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.ProjectImage {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+   
+}
+
+.ProjectImages{
+    width: 40vmin;
+    height: 56vmin;
+    object-position: 100% center;
+}
+
+
+#ItemContainer {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+
 /* Main  */
-#FrontPage{
+#FrontPage {
     animation: Background-Pan 10s linear infinite;
     background: linear-gradient(to right,
             var(--g1),
@@ -79,8 +127,20 @@ header a:hover {
 }
 
 :root {
-    --g1: #00d2ff;
-    --g2: #3a47d5;
+    /* --g1: #00d2ff;
+    --g2: #3a47d5; */
+
+    /* --g1: #fc4a1a;
+    --g2: #f7b733; */
+
+    /* --g1: #007991;
+    --g2: #78ffd6;  */
+
+    /* --g1: #ee0979;
+    --g2: #ff6a00; */
+
+    --g1: #00c3ff;
+    --g2: #ffff1c;
 }
 
 /* Tiles */
@@ -122,4 +182,33 @@ header a:hover {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.ImageWithTextContainer
+{
+display: flex;
+   flex-direction: row;
+    gap: 5em;
+}
+
+.PageImage{
+    width: 70vmin;
+    height: 56vmin;
+    margin-left: 15em;
+    object-fit: cover;
+}
+
+h2, p , a{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+li > a {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.AboutH2
+{
+    color: white;
 }

@@ -1,53 +1,67 @@
+// Get the element with id "Tiles"
 const wrapper = document.getElementById("Tiles");
 
-
+// Initialize a variable to keep track of whether the tiles are toggled or not
 let toggled = false;
 
+// Function to handle click event on a tile
 const HandleOnClick = index => {
-    toggled =! toggled;
+  // Toggle the value of toggled
+  toggled = !toggled;
 
-
-    anime({
-        targets: ".Tile",
-        opacity: toggled ? 0 : 1,
-        delay: anime.stagger(60, {
-            grid: [Columns, Rows],
-            from: index
-        })
-    });
+  // Use anime.js library to animate the opacity of elements with class "Tile"
+  anime({
+    targets: ".Tile",
+    opacity: toggled ? 0 : 1,
+    delay: anime.stagger(60, {
+      grid: [Columns, Rows],
+      from: index
+    })
+  });
 }
 
+// Function to create a tile element
 const CreateTile = index => {
-    const Tile = document.createElement("div");
+  // Create a div element
+  const Tile = document.createElement("div");
 
-    Tile.classList.add("Tile");
+  // Add class "Tile" to the div element
+  Tile.classList.add("Tile");
 
-    Tile.onclick = e => HandleOnClick(index);
+  // Set onclick event listener on the div element to call HandleOnClick function with index as argument
+  Tile.onclick = e => HandleOnClick(index);
 
-    return Tile;
+  // Return the div element
+  return Tile;
 }
 
+// Function to create multiple tile elements and append them to wrapper element
 const CreateTiles = quantity => {
-    Array.from(Array(quantity)).map((Tile, index) => {
-        wrapper.appendChild(CreateTile(index));
-    });
+  // Create an array of length quantity and map over it
+  Array.from(Array(quantity)).map((Tile, index) => {
+    // Append a new tile element created by calling CreateTile function with index as argument to wrapper element
+    wrapper.appendChild(CreateTile(index));
+  });
 }
 
-
+// Function to create a grid of tiles
 const CreateGrid = () => {
-    wrapper.innerHTML = "";
+  // Clear the innerHTML of wrapper element
+  wrapper.innerHTML = "";
 
-    Columns = Math.floor(wrapper.clientWidth / 80),
-        Rows = Math.floor(wrapper.clientHeight / 80);
+  // Calculate the number of columns and rows based on the size of wrapper element and size of each tile (80px)
+  Columns = Math.floor(wrapper.clientWidth / 80),
+    Rows = Math.floor(wrapper.clientHeight / 80);
 
-    wrapper.style.setProperty("--columns", Columns);
-    wrapper.style.setProperty("--rows", Rows);
+  // Set CSS variables --columns and --rows on wrapper element to Columns and Rows respectively
+  wrapper.style.setProperty("--columns", Columns);
+  wrapper.style.setProperty("--rows", Rows);
 
-
-    CreateTiles(Columns * Rows);
-
-
+  // Call CreateTiles function with Columns * Rows as argument to create a grid of tiles
+  CreateTiles(Columns * Rows);
 }
 
+// Call CreateGrid function to create initial grid of tiles
 CreateGrid();
+// Set onresize event listener on window object to call CreateGrid function when window is resized
 window.onresize = () => CreateGrid();

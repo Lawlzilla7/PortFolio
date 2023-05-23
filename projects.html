@@ -9,23 +9,34 @@
     <link rel="stylesheet" href="./Css/style.css">
 </head>
 
-<body>
+<body id="HideScroll">
     <header>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="ProjectsPage">
-        
+        <div class="TextContainer">
+            <H1 class="ProjectsText">Projects</H1>
+        </div>
+        <div id="ItemContainer" data-mouse-down-at="0"  data-prev-percentage="0">
+            <a href="" class="ProjectImages" draggable="false"><img class="ProjectImage" src="./Images/Kittens2.png" alt="" draggable="false"></a>
+            <a href="" class="ProjectImages" draggable="false"><img class="ProjectImage" src="./Images/asd.png" alt="" draggable="false"></a>
+            <a href="" class="ProjectImages" draggable="false"><img class="ProjectImage" src="./Images/WaarWaldo.png" alt="" draggable="false"> </a>
+            <a href="" class="ProjectImages" draggable="false"><img class="ProjectImage" src="./Images/Clicker.png" alt="" draggable="false"> </a>
+        </div>
     </main>
 
     <footer>
 
     </footer>
 </body>
+
+<script src="./Scripts/ProjectsScript.js"></script>
+
 </html>
