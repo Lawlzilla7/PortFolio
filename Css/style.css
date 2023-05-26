@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -12,10 +13,15 @@
     padding: 0;
 }
 
-#HideScroll
-{
+
+#HideScroll {
     overflow-x: hidden;
+    overflow-y: hidden;
     user-select: none;
+}
+
+#HideScrollVertical {
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -55,20 +61,27 @@ header a:hover {
 }
 
 
-#ProjectsPage {
+#ProjectsPage, #DetailPage {
     background-color: #141414;
-    
-
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     margin: 0px;
     padding-top: 70px;
+    padding-bottom: 5em;
 }
+
+#DetailPage
+{
+    padding-top: 3em;
+    height: 100%;
+}
+
 
 .ProjectsText {
     color: #ffffff;
     font-size: 60pt;
+
 }
 
 .TextContainer {
@@ -82,10 +95,10 @@ header a:hover {
     height: 56vmin;
     object-fit: cover;
     object-position: center;
-   
+
 }
 
-.ProjectImages{
+.ProjectImages {
     width: 40vmin;
     height: 56vmin;
     object-position: 100% center;
@@ -94,7 +107,7 @@ header a:hover {
 
 #ItemContainer {
     display: flex;
-    gap: 4vmin;
+    gap: 10vmin;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -103,6 +116,8 @@ header a:hover {
 
 
 /* Main  */
+
+
 #FrontPage {
     animation: Background-Pan 10s linear infinite;
     background: linear-gradient(to right,
@@ -167,6 +182,10 @@ header a:hover {
     inset: 0.5px;
 }
 
+.Tile:hover:before {
+    background-color: rgb(30, 30, 30);
+}
+
 #Title {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', sans-serif;
@@ -185,30 +204,45 @@ header a:hover {
 }
 
 
-.ImageWithTextContainer
-{
-display: flex;
-   flex-direction: row;
+.ImageWithTextContainer {
+    display: flex;
+    flex-direction: row;
     gap: 5em;
 }
 
-.PageImage{
+.PageImage {
     width: 70vmin;
     height: 56vmin;
     margin-left: 15em;
     object-fit: cover;
 }
 
-h2, p , a{
-    color: white;
-    font-family: 'PT Sans', sans-serif;
+.HeroBanner {
+    height: 25em;
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
 }
 
-li > a {
+h2,
+p,
+a {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+article > p {
+    max-width: 65ch;
+    margin-top: 1em;
+}
+
+li>a {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.AboutH2
-{
+
+.AboutH2 {
     color: white;
+    /* margin-bottom: 1em; */
+    font-weight: 400;
 }
