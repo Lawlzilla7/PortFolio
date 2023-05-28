@@ -8,12 +8,6 @@
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
 #HideScroll {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -231,7 +225,7 @@ a {
     font-family: 'Rubik', sans-serif;
 }
 
-article > p {
+article > p , article > a{
     max-width: 65ch;
     margin-top: 1em;
 }
@@ -239,7 +233,6 @@ article > p {
 li>a {
     font-family: 'Bebas Neue', sans-serif;
 }
-
 
 .AboutH2 {
     color: white;
