@@ -13,8 +13,7 @@
 
 /*#region HideScroll*/
 #HideScroll {
-    overflow-x: hidden;
-    overflow-y: hidden;
+   overflow: hidden;
     user-select: none;
 }
 
@@ -112,7 +111,7 @@ li>a {
 #Title {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 90pt;
+    font-size: clamp(4rem, -0.1596rem + 11.3475vw, 7.5rem);
     pointer-events: none;
     transition: opacity 1200ms ease;
     width: 50vw;
@@ -150,8 +149,8 @@ article>a {
 
 .ProjectsText {
     color: #ffffff;
-    font-size: 60pt;
-
+    /* font-size: 60pt; */
+    font-size: clamp(2rem, 0.4043rem + 6.8085vw, 5rem);
 }
 
 .TextContainer {
@@ -226,7 +225,8 @@ article>a {
 #ItemContainer {
     display: flex;
     gap: 10vmin;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(0%, -50%);
@@ -263,9 +263,20 @@ article>a {
 
     .PageImage {
         margin: 0;
+    }    
+    .ProjectImage, .ProjectImages {
+        width: 70vmin;
+        height: 80vmin;
+    }
+    .ImageWithTextContainer > article {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .ProjectsText {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
 }
-
 /*#endregion RegionName*/
 
 /*#region RegionName*/
