@@ -13,7 +13,7 @@
 
 /*#region HideScroll*/
 #HideScroll {
-   overflow: hidden;
+    overflow: hidden;
     user-select: none;
 }
 
@@ -148,8 +148,7 @@ article>a {
     margin-top: 1em;
 }
 
-.ProjectsPageHeaderText
-{
+.ProjectsPageHeaderText {
     color: #ffffff;
     /* font-size: 60pt; */
     font-size: clamp(2rem, 0.4043rem + 6.8085vw, 5rem);
@@ -160,12 +159,12 @@ article>a {
     /* font-size: 60pt; */
     font-size: clamp(2rem, 0.4043rem + 6.8085vw, 8rem);
     position: absolute;
-    top :20%;
+    top: 20%;
     text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
+        3px 3px 0 #000,
+        -3px 3px 0 #000,
+        -3px -3px 0 #000,
+        3px -3px 0 #000;
 }
 
 .TextContainer {
@@ -220,6 +219,7 @@ article>a {
     --g1: #00c3ff;
     --g2: #ffff1c;
 }
+
 /*#endregion Tiles Main*/
 
 /*#region Images*/
@@ -278,20 +278,25 @@ article>a {
 
     .PageImage {
         margin: 0;
-    }    
-    .ProjectImage, .ProjectImages {
+    }
+
+    .ProjectImage,
+    .ProjectImages {
         width: 70vmin;
         height: 80vmin;
     }
-    .ImageWithTextContainer > article {
+
+    .ImageWithTextContainer>article {
         padding-left: 1em;
         padding-right: 1em;
     }
+
     .ProjectsText {
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
 }
+
 /*#endregion RegionName*/
 
 /*#region Buttons*/
@@ -302,7 +307,7 @@ article>a {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999; 
+    z-index: 9999;
     background-color: #000000;
     padding: 10px;
     height: 5em;
@@ -319,19 +324,20 @@ article>a {
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
+    transition: background 250ms ease-in-out,
+        transform 150ms ease;
 }
 
 .CallToActionMain:hover,
 .CallToActionMain:focus {
     animation: Background-Pan 10s linear infinite;
     background: linear-gradient(to right,
-    var(--g1),
-    var(--g2),
-    var(--g1));
-background-size: 500%;;
-background-color: #00c3ff;
+            var(--g1),
+            var(--g2),
+            var(--g1));
+    background-size: 500%;
+    ;
+    background-color: #00c3ff;
 }
 
 .CallToActionMain:focus {
@@ -344,3 +350,35 @@ background-color: #00c3ff;
 
 
 /*#endregion Buttons*/
+
+/*#region SocialMedia*/
+
+.AboutWithSocialMedia {
+    display: flex;
+    flex-direction: column;
+}
+
+.SocialMediaButtons {
+    padding-top: 5em;
+}
+
+.fa {
+    padding: 20px;
+    margin-right: 10px;
+    font-size: 100pt;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter,
+.fa-linkedin {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/* #endregion SocialMedia */
