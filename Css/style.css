@@ -111,17 +111,18 @@ li>a {
 #Title {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(4rem, -0.1596rem + 11.3475vw, 7.5rem);
+    font-size: clamp(4rem, -0.1596rem + 11.3475vw, 10rem);
     pointer-events: none;
     transition: opacity 1200ms ease;
-    width: 50vw;
+    width: 100vw;
     z-index: 3;
+    text-align: center;
 }
 
 .Centered {
     left: 50%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
 }
 
@@ -147,10 +148,24 @@ article>a {
     margin-top: 1em;
 }
 
-.ProjectsText {
+.ProjectsPageHeaderText
+{
     color: #ffffff;
     /* font-size: 60pt; */
     font-size: clamp(2rem, 0.4043rem + 6.8085vw, 5rem);
+}
+
+.ProjectsText {
+    color: #ffffff;
+    /* font-size: 60pt; */
+    font-size: clamp(2rem, 0.4043rem + 6.8085vw, 8rem);
+    position: absolute;
+    top :20%;
+    text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
 }
 
 .TextContainer {
@@ -279,6 +294,53 @@ article>a {
 }
 /*#endregion RegionName*/
 
-/*#region RegionName*/
+/*#region Buttons*/
 
-/*#endregion RegionName*/
+
+.CallToActionMain {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; 
+    background-color: #000000;
+    padding: 10px;
+    height: 5em;
+    text-align: center;
+    outline: solid 2px white;
+
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+.CallToActionMain:hover,
+.CallToActionMain:focus {
+    animation: Background-Pan 10s linear infinite;
+    background: linear-gradient(to right,
+    var(--g1),
+    var(--g2),
+    var(--g1));
+background-size: 500%;;
+background-color: #00c3ff;
+}
+
+.CallToActionMain:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+
+
+
+
+/*#endregion Buttons*/
