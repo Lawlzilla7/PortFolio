@@ -13,8 +13,10 @@
 
 /*#region HideScroll*/
 #HideScroll {
+    overflow-x: hidden;
     overflow: hidden;
     user-select: none;
+    position: relative;
 }
 
 #HideScrollVertical {
@@ -261,7 +263,7 @@ article>a {
 }
 
 .HeroBanner {
-    height: 25em;
+    height: 20em;
     margin: 0;
     width: 100%;
     object-fit: cover;
@@ -285,6 +287,9 @@ article>a {
         width: 70vmin;
         height: 80vmin;
     }
+    .HeroBanner{
+        height: 10em;
+    }
 
     .ImageWithTextContainer>article {
         padding-left: 1em;
@@ -295,6 +300,11 @@ article>a {
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
+    .Icon{
+        width: 15em;
+    }
+
+
 }
 
 /*#endregion RegionName*/
@@ -309,14 +319,13 @@ article>a {
     transform: translate(-50%, -50%);
     z-index: 9999;
     background-color: #383838;
-    padding: 10px;
-    height: 5em;
+    height: fit-content;
     text-align: center;
     outline: solid 2px white;
-
+    
     display: inline-block;
     border: none;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     margin: 0;
     text-decoration: none;
     color: #ffffff;
@@ -324,12 +333,12 @@ article>a {
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out,
-        transform 150ms ease;
+    transition: background 250ms ease-in-out, transform 150ms ease;
 }
+
 .CTA-H2
 {
-    font-size: 28pt;
+    font-size: clamp(1.5rem, 2.2203rem + -3.0733vw, 0.14583125rem);
 }
 
 .CallToActionMain:hover,
