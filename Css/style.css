@@ -287,7 +287,8 @@ article>a {
         width: 70vmin;
         height: 80vmin;
     }
-    .HeroBanner{
+
+    .HeroBanner {
         height: 10em;
     }
 
@@ -300,18 +301,17 @@ article>a {
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
-    .Icon{
+
+    .Icon {
         width: 15em;
     }
 
 
 }
 
-/*#endregion RegionName*/
+/*#endregion MediaQuery*/
 
 /*#region Buttons*/
-
-
 .CallToActionMain {
     position: absolute;
     top: 70%;
@@ -322,7 +322,7 @@ article>a {
     height: fit-content;
     text-align: center;
     outline: solid 2px white;
-    
+
     display: inline-block;
     border: none;
     padding: 2rem 2rem;
@@ -336,8 +336,7 @@ article>a {
     transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
-.CTA-H2
-{
+.CTA-H2 {
     font-size: clamp(1.5rem, 2.2203rem + -3.0733vw, 0.14583125rem);
 }
 
@@ -357,10 +356,6 @@ article>a {
     outline: 1px solid #fff;
     outline-offset: -4px;
 }
-
-
-
-
 
 /*#endregion Buttons*/
 
@@ -393,8 +388,9 @@ article>a {
     background: #ffffff;
     color: rgb(0, 0, 0);
 }
+/* #endregion SocialMedia */
 
-
+/*#region Frontpage*/
 #FrontPage.toggled {
     animation: none;
 }
@@ -420,6 +416,6 @@ article>a {
     opacity: 0;
     pointer-events: none;
     transition: opacity 1200ms ease;
-    z-index: 1;    
+    z-index: 1;
 }
-/* #endregion SocialMedia */
+/*#endregion Frontpage*/
