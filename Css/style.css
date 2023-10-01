@@ -308,7 +308,7 @@ article>a {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    background-color: #000000;
+    background-color: #383838;
     padding: 10px;
     height: 5em;
     text-align: center;
@@ -326,6 +326,10 @@ article>a {
     text-align: center;
     transition: background 250ms ease-in-out,
         transform 150ms ease;
+}
+.CTA-H2
+{
+    font-size: 28pt;
 }
 
 .CallToActionMain:hover,
@@ -381,4 +385,32 @@ article>a {
     color: rgb(0, 0, 0);
 }
 
+
+#FrontPage.toggled {
+    animation: none;
+}
+
+#FrontPage.toggled>#Title {
+    opacity: 0;
+}
+
+#FrontPage.toggled>.Icon {
+    opacity: .5;
+}
+
+#FrontPage.toggled>#Tiles>.Tile:hover {
+    opacity: 0.1 !important;
+}
+
+.Icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45em;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1200ms ease;
+    z-index: 1;    
+}
 /* #endregion SocialMedia */

@@ -9,6 +9,7 @@ const HandleOnClick = index => {
   // Toggle the value of toggled
   toggled = !toggled;
 
+  document.querySelector("#FrontPage").classList.toggle("toggled");
   // Use anime.js library to animate the opacity of elements with class "Tile"
   anime({
     targets: ".Tile",
