@@ -71,19 +71,20 @@ li>a {
 #ProjectsPage,
 #DetailPage {
     background-color: #141414;
-    height: 100vh;
     width: 100vw;
     overflow: hidden;
     margin: 0px;
     padding-top: 70px;
     padding-bottom: 5em;
 }
-
 #DetailPage {
     padding-top: 3em;
     height: 100%;
 }
-
+#ProjectsPage
+{
+    height: 100vh;
+}
 #FrontPage {
     animation: Background-Pan 10s linear infinite;
     background: linear-gradient(to right,
@@ -139,7 +140,8 @@ li>a {
 
 h2,
 p,
-a {
+a,
+.Bold {
     color: white;
     font-family: 'Rubik', sans-serif;
 }
@@ -174,6 +176,10 @@ article>a {
     justify-content: center;
 }
 
+.Bold
+{
+    font-weight: bold;
+}
 /*#endregion Text and headings*/
 
 /*#region Tiles Main*/
@@ -297,7 +303,7 @@ article>a {
         padding-right: 1em;
     }
 
-    .ProjectsText {
+    .ProjectsText, .AboutWithSocialMedia {
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
@@ -373,7 +379,7 @@ article>a {
 .fa {
     padding: 20px;
     margin-right: 10px;
-    font-size: 100pt;
+    font-size: 3em;
     width: 50px;
     text-align: center;
     text-decoration: none;
@@ -384,7 +390,7 @@ article>a {
 }
 
 .fa-twitter,
-.fa-linkedin {
+.fa-linkedin, .fa-envelope{
     background: #ffffff;
     color: rgb(0, 0, 0);
 }
