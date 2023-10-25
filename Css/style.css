@@ -68,8 +68,14 @@ header a:hover {
     color: var(--g1);
 }
 
-li>a {
+li>a , .CurrentPage
+ {
     font-family: 'Bebas Neue', sans-serif;
+}
+
+.CurrentPage{
+    /* color: #00c3ff; */
+    font-size: 24pt;
 }
 
 /*#endregion Header*/
@@ -87,7 +93,7 @@ li>a {
 
 #DetailPage {
     padding-top: 4em;
-    height: 100%;
+    height: 100vh;
 }
 
 #ProjectsPage {
@@ -294,6 +300,17 @@ article>a {
     position: relative;
 }
 
+.SwipeIndicator
+{
+    position:fixed;
+    bottom:0px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    height: 4em;
+    margin-bottom: 4em;
+    opacity: 0.1;
+}
 /*#endregion Images*/
 
 /*#region MediaQuery*/
@@ -429,7 +446,8 @@ article>a {
 
 .fa-twitter,
 .fa-linkedin,
-.fa-envelope {
+.fa-envelope, 
+.fa-file {
     background: #ffffff;
     color: rgb(0, 0, 0);
 }
