@@ -38,14 +38,14 @@ const handleOnMove = e => {
   // Animate track element's transform property
   track.animate({
     transform: `translate(${nextPercentage}%, -50%)`
-  }, { duration: 1200, fill: "forwards" });
+  }, { duration: 800, fill: "forwards" });
 
   // Get all elements with class "ProjectImage" within track element
   for(const image of track.getElementsByClassName("ProjectImage")) {
     // Animate image element's objectPosition property
     image.animate({
       objectPosition: `${100 + nextPercentage}% center`
-    }, { duration: 1200, fill: "forwards" });
+    }, { duration: 800, fill: "forwards" });
   }
 }
 

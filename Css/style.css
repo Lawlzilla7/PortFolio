@@ -82,7 +82,7 @@ li>a , .CurrentPage
 
 /*#region Pages*/
 #ProjectsPage,
-#DetailPage {
+#DetailPage, #AboutPage {
     background-color: #141414;
     width: 100vw;
     overflow: hidden;
@@ -93,6 +93,10 @@ li>a , .CurrentPage
 
 #DetailPage {
     padding-top: 4em;
+    height: 100%;
+}
+#AboutPage
+{
     height: 100vh;
 }
 
@@ -162,10 +166,16 @@ a,
     font-family: 'Rubik', sans-serif;
 }
 
+.LabelText
+{
+    color: #000000;
+}
 article>p,
 article>a {
     max-width: 65ch;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-right: 1em;
+
 }
 
 .ProjectsPageHeaderText {
@@ -311,6 +321,17 @@ article>a {
     margin-bottom: 4em;
     opacity: 0.1;
 }
+
+.Label
+{
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    height: 10%;
+    z-index: 999999;
+    bottom: 55px;
+    
+}
 /*#endregion Images*/
 
 /*#region MediaQuery*/
@@ -318,6 +339,7 @@ article>a {
     .ImageWithTextContainer {
         flex-direction: column;
         align-items: center;
+        gap: 1em;
     }
 
     .PageImage {
@@ -366,6 +388,10 @@ article>a {
     .CallToActionMain
     {
         padding: 1rem 1rem !important;
+    }
+
+    #AboutPage{
+        height: 100%;
     }
 }
 
