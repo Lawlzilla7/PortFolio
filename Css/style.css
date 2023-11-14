@@ -76,6 +76,7 @@ li>a , .CurrentPage
 .CurrentPage{
     /* color: #00c3ff; */
     font-size: 24pt;
+    color: var(--g1);
 }
 
 /*#endregion Header*/
@@ -153,7 +154,7 @@ li>a , .CurrentPage
 
 /*#region Text and headings*/
 .AboutH2 {
-    color: white;
+    color: var(--g1);
     /* margin-bottom: 1em; */
     font-weight: 400;
 }
@@ -166,6 +167,10 @@ a,
     font-family: 'Rubik', sans-serif;
 }
 
+.Bold {
+    font-weight: bold;
+    color: var(--g1);
+}
 .LabelText
 {
     color: #000000;
@@ -203,9 +208,7 @@ article>a {
     justify-content: center;
 }
 
-.Bold {
-    font-weight: bold;
-}
+
 
 /*#endregion Text and headings*/
 
@@ -242,17 +245,28 @@ article>a {
     /* --g1: #00d2ff;
     --g2: #3a47d5; */
 
-    /* --g1: #fc4a1a;
-    --g2: #f7b733; */
-
-    /* --g1: #007991;
-    --g2: #78ffd6;  */
-
-    /* --g1: #ee0979;
+    /* --g1: #78ffd6; 
+    --g2: #007991; */
+    
+    /* --g1: #ee0979;  
     --g2: #ff6a00; */
 
-    --g1: #00c3ff;
-    --g2: #ffff1c;
+
+    /* Fall Colours */
+    --g1: #fc4a1a;
+    --g2: #f7b733;
+
+    /* Winter */    
+    /* --g1: #6CAFD9; 
+    --g2: #03588C;   */
+
+    /* Spring */
+    /* --g1: #d4fc79;
+    --g2: #96e6a1; */
+
+    /* Summer */
+    /* --g1: #00c3ff;
+    --g2: #ffff1c; */
 }
 
 /*#endregion Tiles Main*/
@@ -420,6 +434,7 @@ article>a {
     cursor: pointer;
     text-align: center;
     transition: background 250ms ease-in-out, transform 150ms ease;
+    
     border-radius: 50px;
 }
 
@@ -481,9 +496,9 @@ article>a {
 /* #endregion SocialMedia */
 
 /*#region Frontpage*/
-#FrontPage.toggled {
+/* #FrontPage.toggled {
     animation: none;
-}
+} */
 
 #FrontPage.toggled>#Title {
     opacity: 0;
