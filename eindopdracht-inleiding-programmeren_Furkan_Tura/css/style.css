@@ -1,0 +1,214 @@
+*html {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+.ModalRetry {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: #f4f4f4;
+    background-image: linear-gradient(45deg, #f4f4f4 25%, #fa7175 25%, #fa7175 50%, #f4f4f4 50%, #f4f4f4 75%, #fa7175 75%, #fa7175 100%);
+    background-size: 169.71px 169.71px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #fa7175;
+    padding: 0.5em;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 3em;
+    box-sizing: border-box;
+    border-bottom: solid black 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #cf2129;
+    padding: 0.5em;
+    margin: 0;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 2em;
+    box-sizing: border-box;
+    /* border-top: solid black 2px; */
+}
+
+.Content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+canvas,
+#CanvasElement {
+    background-color: rgb(255, 255, 255);
+    width: 55%;
+    margin-top: 3em;
+    border: solid black 5px;
+    background-color: black;
+
+}
+
+#ZoomElement {
+    max-width: 25%;
+    max-height: 25%;
+    position: fixed;
+    display: block;
+    cursor: none;
+    z-index: 1;
+}
+
+.Confetti-right,
+.Confetti-left {
+    position: absolute;
+    width: 20vw;
+    mix-blend-mode: multiply;
+}
+
+.Confetti-left {
+    bottom: 0;
+    left: 0;
+}
+
+.Confetti-right {
+    bottom: 0;
+    right: 0;
+}
+
+.Remaining {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    background-color: #f4f4f4;
+    padding: 5px;
+    border: black 5px solid;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 1px;
+    background-color: #f4f4f4;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.Win {
+    color: #f4f4f4;
+}
+
+.Dief,
+.Stoereman,
+.wallie,
+.Tovenaar,
+.Toren {
+    opacity: 0.5;
+    background-color: aquamarine;
+    width: 8em;
+    height: 8em;
+    margin: 0em 1em 0 1em;
+    border: black solid 5px;
+    border-radius: 50%;
+}
+
+.Modal {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(27, 27, 27, 0.6);
+}
+
+.Modal-Content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px solid #000000;
+    width: 60%;
+}
+
+.Modal-Win {
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px solid #000000;
+    width: 60%;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    animation: Regenboog 25s ease infinite;
+    background-size: 2000% 2000%;
+}
+
+@keyframes Regenboog {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+.Modal-Flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+.Close-Modal {
+    color: #000000;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.Close-Modal:hover,
+.Close-Modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ModalRetry {
+    width: 50%;
+    height: 2em;
+    font-size: 26px;
+    border: #000000 5px solid;
+}

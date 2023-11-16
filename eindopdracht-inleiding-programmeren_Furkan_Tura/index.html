@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.ico">
+    <title>Waar is wally</title>
+</head>
+
+<body>
+    <header>
+        <H1 class="Win">Waar is Wally?</H1>
+    </header>
+    <main>
+        <section class="Modal">
+            <div class="Modal-Content">
+                <span class="Close-Modal">&times;</span>
+                <div class="Modal-Flex">
+                    <h1 class="Uitleg">Uitleg</h1>
+                    <p>Beweeg met je muis over de afbeelding met je vergrootglas en klik op Wally en zijn maten
+                    </p>
+                    <button class="ModalRetry">Begin opnieuw</button>
+                </div>
+            </div>
+        </section>
+
+        <canvas id="ZoomElement">
+
+        </canvas>
+
+        <div class="Content">
+            <canvas id="CanvasElement"></canvas>
+
+            <h2>Probeer hun te vinden!</h2>
+            <div class="Remaining">
+                <img class="Dief" src="./images/found_images/dief.png" alt="dief">
+                <img class="Stoereman" src="./images/found_images/stoereman.png" alt="stoereman">
+                <img class="wallie" src="./images/found_images/wally.png" alt="wallie">
+                <img class="Tovenaar" src="./images/found_images/weezzard.png" alt="tovenaar">
+                <img class="Toren" src="./images/found_images/Nepper.png" alt="Nepper">
+            </div>
+        </div>
+        <div>
+            <img Class="Confetti-right" src="./images/found_images/confetti-right.gif" alt="">
+            <img Class="Confetti-left" src="./images/found_images/confetti-left.gif" alt="">
+        </div>
+        <script src="./scripts/Script.js"></script>
+    </main>
+</body>
+
+
+
+
+<!-- 
+            Bron vermelding:
+
+            Confetti gif:
+            https://lottiefiles.com/125045-confetti-gif
+            https://www.icegif.com/confetti-54/
+
+            Waar is waldo achtergrond afbeelding van Wheres Wally 30th anniversary edition van Martin HandFord
+            https://www.amazon.co.uk/Wheres-Wally-Martin-Handford/dp/1406375691
+            
+-->
+
+</html>
