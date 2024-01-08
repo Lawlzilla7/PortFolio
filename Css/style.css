@@ -253,12 +253,12 @@ article>a {
 
 
     /* Fall Colours */
-    --g1: #fc4a1a;
-    --g2: #f7b733;
+    /* --g1: #fc4a1a;
+    --g2: #f7b733; */
 
     /* Winter */    
-    /* --g1: #6CAFD9; 
-    --g2: #03588C;   */
+    --g1: #6CAFD9; 
+    --g2: #03588C;  
 
     /* Spring */
     /* --g1: #d4fc79;
