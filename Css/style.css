@@ -488,7 +488,7 @@ article>a {
 .fa-twitter,
 .fa-linkedin,
 .fa-envelope, 
-.fa-file {
+.fa-file, .fa-github{
     background: #ffffff;
     color: rgb(0, 0, 0);
 }
