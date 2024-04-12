@@ -1,6 +1,8 @@
 // Get the element with id "Tiles"
 const wrapper = document.getElementById("Tiles");
 
+
+
 // Initialize a variable to keep track of whether the tiles are toggled or not
 let toggled = false;
 
@@ -66,5 +68,6 @@ const CreateGrid = () => {
 CreateGrid();
 // Set onresize event listener on window object to call CreateGrid function when window is resized
 window.onresize = () => CreateGrid();
+
 
 
