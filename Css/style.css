@@ -148,6 +148,7 @@ li>a,
 .Centered {
     left: 50%;
     position: absolute;
+    list-style:none;
     top: 40%;
     transform: translate(-50%, -50%);
 }
@@ -177,6 +178,7 @@ a,
 .BoldInline {
     font-weight: bold;
 }
+
 
 .LabelText {
     color: #000000;
@@ -585,6 +587,10 @@ article>a {
         1px 22px 10px rgba(16, 16, 16, 0.2),
         1px 25px 35px rgba(16, 16, 16, 0.2),
         1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+.TextEffect :nth-child(n+2)
+{
+    font-size: .7em;
 }
 
 /*#endregion Frontpage*/
