@@ -294,6 +294,7 @@ article>a {
     height: 56vmin;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
 }
 
 .ProjectImages {
@@ -301,12 +302,9 @@ article>a {
     height: 56vmin;
     object-position: 100% center;
     border: white 4px solid;
+    border-radius: 14px;
 }
-
-.ProjectImage,
-.ProjectImages {
-    border-radius: 10px;
-}
+   
 
 #ItemContainer {
     display: flex;
