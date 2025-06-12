@@ -325,6 +325,13 @@ article>a {
     margin-top: 1em;
 }
 
+.ImageWithTextContainerAbout {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    margin-top: 1em;
+}
+
 .PageImage {
     width: 70vmin;
     height: 56vmin;
@@ -373,6 +380,12 @@ article>a {
         gap: 1em;
     }
 
+    .ImageWithTextContainerAbout {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
     .PageImage {
         margin: 0;
     }
@@ -394,8 +407,8 @@ article>a {
 
     .ProjectsText,
     .AboutWithSocialMedia {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .Icon {
@@ -423,6 +436,9 @@ article>a {
 
     #AboutPage{
         height: 100%;
+    }
+    .ImageWithTextContainer{
+        flex-direction: column-reverse;
     }
 }
 
