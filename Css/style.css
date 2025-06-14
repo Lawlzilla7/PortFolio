@@ -148,7 +148,7 @@ li>a,
 .Centered {
     left: 50%;
     position: absolute;
-    list-style:none;
+    list-style: none;
     top: 40%;
     transform: translate(-50%, -50%);
 }
@@ -180,9 +180,7 @@ a,
 }
 
 
-.LabelText {
-    color: #000000;
-}
+
 
 article>p,
 article>a {
@@ -305,14 +303,47 @@ article>a {
     border-radius: 10px;
 }
 
+/* .Label {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    height: 10%;
+    z-index: 999999;
+    bottom: 55px;
+
+} */
+
+.Label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.LabelText {
+    color: #000000;
+}
+
 .ProjectImages {
+    position: relative;
     width: 40vmin;
     height: 56vmin;
     object-position: 100% center;
-    border: white 4px solid;
+    /* border: white 4px solid; */
     border-radius: 14px;
+    transition: transform 0.1s ease-in-out;
 }
 
+.ProjectImages:hover {
+    transform: scale(1.1);
+    /* Grows by 5% */
+}
 
 #ItemContainer {
     display: flex;
@@ -365,15 +396,7 @@ article>a {
     opacity: 0.1;
 }
 
-.Label {
-    position: relative;
-    background-color: #ffffff;
-    width: 100%;
-    height: 10%;
-    z-index: 999999;
-    bottom: 55px;
 
-}
 
 /*#endregion Images*/
 
@@ -572,7 +595,7 @@ article>a {
     font-size: .5em;
     font-weight: 700;
     color: #f5f5f5;
-    list-style:none;
+    list-style: none;
     text-shadow: 1px 1px 1px #919191,
         1px 2px 1px #919191,
         1px 3px 1px #919191,
@@ -588,8 +611,8 @@ article>a {
         1px 25px 35px rgba(16, 16, 16, 0.2),
         1px 30px 60px rgba(16, 16, 16, 0.4);
 }
-.TextEffect :nth-child(n+2)
-{
+
+.TextEffect :nth-child(n+2) {
     font-size: .7em;
 }
 
