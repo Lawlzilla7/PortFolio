@@ -401,7 +401,7 @@ article>a {
 /*#endregion Images*/
 
 /*#region MediaQuery*/
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1281px) {
     .ImageWithTextContainer {
         flex-direction: column;
         align-items: center;
@@ -418,11 +418,11 @@ article>a {
         margin: 0;
     }
 
-    .ProjectImage,
+    /* .ProjectImage,
     .ProjectImages {
         width: 70vmin;
         height: 80vmin;
-    }
+    } */
 
     .HeroBanner {
         height: 10em;
@@ -469,6 +469,15 @@ article>a {
         flex-direction: column-reverse;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .ProjectImage,
+    .ProjectImages {
+        width: 70vmin;
+        height: 80vmin;
+    }
+}
+
 
 /*#endregion MediaQuery*/
 
