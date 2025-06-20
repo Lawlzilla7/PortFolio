@@ -95,7 +95,7 @@ li>a,
 }
 
 #DetailPage {
-    padding-top: 4em;
+    padding-top: 0em;
     height: 100%;
 }
 
@@ -202,12 +202,18 @@ article>a {
     /* font-size: 60pt; */
     font-size: clamp(2rem, 0.4043rem + 6.8085vw, 8rem);
     position: absolute;
-    top: 20%;
-    text-shadow:
+    top: 10%;
+    /* text-shadow:
         3px 3px 0 #000,
         -3px 3px 0 #000,
         -3px -3px 0 #000,
-        3px -3px 0 #000;
+        3px -3px 0 #000; */
+
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0); */
+    background: rgba(55, 55, 55, 0.5);
+    padding: 0px .5em 0px .5em;
+
 }
 
 .TextContainer {
@@ -460,6 +466,7 @@ article>a {
         border-radius: 0;
     }
 
+
     .CallToActionMain {
         padding: 1rem 1rem !important;
     }
@@ -471,9 +478,29 @@ article>a {
     .ImageWithTextContainer {
         flex-direction: column-reverse;
     }
+
+    .ProjectsText {
+    color: #ffffff;
+    /* font-size: 60pt; */
+    font-size: clamp(2rem, 0.4043rem + 6.8085vw, 8rem);
+    position: absolute;
+    top: 10%;
+    /* text-shadow:
+        3px 3px 0 #000,
+        -3px 3px 0 #000,
+        -3px -3px 0 #000,
+        3px -3px 0 #000; */
+
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0); */
+    background: rgba(55, 55, 55, 0.5);
+    padding: 0px 5px 0px 5px;
+
+}
 }
 
 @media only screen and (max-width: 600px) {
+
     .ProjectImage,
     .ProjectImages {
         width: 70vmin;
