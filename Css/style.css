@@ -379,6 +379,13 @@ article>a {
     margin-top: 1em;
 }
 
+.ImageWithTextContainerCentered {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    margin-top: 1em;
+}
+
 
 
 
