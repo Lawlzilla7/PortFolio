@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-Style Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #0d1117 0%, #1a1f29 100%);
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #8b949e;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        /* Left Panel */
+        .preview {
+            background: rgba(30, 40, 50, 0.9);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 122, 204, 0.3);
+            padding: 10px;
+        }
+
+        .preview img {
+            width: 100%;
+            border-radius: 12px;
+            display: block;
+            height: 53vh;
+            object-fit: cover;
+        }
+
+        .filters {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .filters button {
+            background: #2c3440;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .filters button.active,
+        .filters button:hover {
+            background: #007acc;
+        }
+
+        /* Right Panel */
+        .project-info {
+            background: rgba(30, 40, 50, 0.9);
+            padding: 15px;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+        }
+
+        .project-info h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .project-info p {
+            font-size: 0.95rem;
+            color: #c9d1d9;
+            margin-bottom: 10px;
+        }
+
+        .tech-stack {
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+
+        /* Bottom Carousel */
+        .project-list {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .project-item {
+            background: #2c3440;
+            padding: 10px;
+            border-radius: 12px;
+            min-width: 160px;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 5px;
+        }
+
+        .project-item.active {
+            box-shadow: 0 0 10px #007acc;
+            transform: scale(1.05);
+        }
+
+        .project-item:hover {
+            box-shadow: 0 0 15px rgba(0, 122, 204, 0.6);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MY PORTFOLIO</h1>
+    <div class="subtitle">Selected Projects</div>
+
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="preview">
+            <img id="project-image" src="./Images/SSSFigma.png" alt="Project Preview">
+        </div>
+
+        <!-- Right Panel -->
+        <div class="project-info">
+            <h2 id="project-title">E-commerce Website</h2>
+            <p id="project-description">
+                For my internship project, I had to design a new version of the shop screens,
+                because many customers drop out during the purchasing process.
+                A possible solution for this was to redesign and expand these screens.
+            </p>
+        </div>
+    </div>
+
+    <!-- Bottom Carousel -->
+    <div class="project-list">
+        <div class="project-item active"
+            onclick="selectProject('./Images/SSSFigma.png', 'E-commerce Website', 'A modern e-commerce site with dynamic product filtering, secure checkout, and responsive design.', event)">
+            <img src="./Images/SSSFigma.png" alt="">
+            <p>E-commerce</p>
+        </div>
+        <div class="project-item"
+            onclick="selectProject('./Images/MockupDoosAf.png', 'Portfolio Website', 'A personal portfolio showcasing creative design and coding skills.', 'HTML, CSS, JavaScript', event)">
+            <img src="./Images/SSSFigma.png" alt="">
+            <p>Portfolio</p>
+        </div>
+        <div class="project-item"
+            onclick="selectProject('project3.jpg', 'Blog Platform', 'A full-featured blog platform with authentication and content management.', 'Node.js, Express, MongoDB', event)">
+            <img src="./Images/SSSFigma.png" alt="">
+            <p>Blog</p>
+        </div>
+        <div class="project-item"
+            onclick="selectProject('project3.jpg', 'Blog Platform', 'A full-featured blog platform with authentication and content management.', 'Node.js, Express, MongoDB', event)">
+            <img src="./Images/SSSFigma.png" alt="">
+            <p>Blog</p>
+        </div>
+        <div class="project-item"
+            onclick="selectProject('project3.jpg', 'Blog Platform', 'A full-featured blog platform with authentication and content management.', 'Node.js, Express, MongoDB', event)">
+            <img src="./Images/SSSFigma.png" alt="">
+            <p>Blog</p>
+        </div>
+        <div class="project-item"
+            onclick="selectProject('project3.jpg', 'Blog Platform', 'A full-featured blog platform with authentication and content management.', 'Node.js, Express, MongoDB', event)">
+            <img src="./Images/SSSFigma.png" alt="">
+            <p>Blog</p>
+        </div>
+        <div class="project-item"
+            onclick="selectProject('project3.jpg', 'Blog Platform', 'A full-featured blog platform with authentication and content management.', 'Node.js, Express, MongoDB', event)">
+            <img src="./Images/SSSFigma.png" alt="">
+            <p>Blog</p>
+        </div>
+        <div class="project-item"
+            onclick="selectProject('project3.jpg', 'Blog Platform', 'A full-featured blog platform with authentication and content management.', 'Node.js, Express, MongoDB', event)">
+            <img src="./Images/SSSFigma.png" alt="">
+            <p>Blog</p>
+        </div>
+    </div>
+
+    <script>
+        function selectProject(image, title, description, tech, e) {
+            document.getElementById('project-image').src = image;
+            document.getElementById('project-title').textContent = title;
+            document.getElementById('project-description').textContent = description;
+
+            document.querySelectorAll('.project-item').forEach(el => el.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+        }
+
+        document.querySelectorAll('.filters button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
+                button.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
