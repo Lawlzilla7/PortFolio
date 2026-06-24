@@ -86,12 +86,39 @@ li>a,
 #ProjectsPage,
 #DetailPage,
 #AboutPage {
-    background-color: #141414;
+    position: relative; 
     width: 100vw;
-    overflow: hidden;
+    height: 100vh; /* Optional: ensures the page takes up the full viewport height */
+    overflow: hidden; /* Crucial: hides the oversized corners of the pseudo-element */
     margin: 0px;
     padding-top: 70px;
     padding-bottom: 5em;
+}
+
+#ProjectsPage::before,
+#DetailPage::before,
+#AboutPage::before {
+    content: ""; 
+    position: absolute; 
+    
+    /* 1. Center the element */
+    top: 50%;
+    left: 50%;
+    
+    /* 2. Make it larger than 100% so the corners cover the screen when rotated */
+    width: 150vmax; 
+    height: 150vmax; 
+    
+    /* 3. Center it using translate, THEN rotate it */
+    transform: translate(-50%, -50%) rotate(30deg); 
+    
+    z-index: -1; 
+
+    /* Image settings */
+    background-image: url("/Images/Frame%2018.png"); 
+    background-color: #131313;    
+    background-size: 32em;
+    background-repeat: repeat; /* Ensures the pattern tiles infinitely */
 }
 
 #DetailPage {
@@ -161,6 +188,7 @@ li>a,
     transform: translate(-50%, -50%);
     padding: 1em;
 }
+
 /*#endregion Text Titles*/
 
 /*#region Text and headings*/
@@ -210,7 +238,7 @@ article>a {
     /* font-size: 60pt; */
     font-size: clamp(2rem, 0.4043rem + 6.8085vw, 8rem);
     position: absolute;
-    top: 10%;
+    top: 5%;
     /* text-shadow:
         3px 3px 0 #000,
         -3px 3px 0 #000,
@@ -429,6 +457,28 @@ article>a {
 
 /*#region MediaQuery*/
 @media only screen and (max-width: 1281px) {
+    #ProjectsPage::before,
+    #DetailPage::before,
+    #AboutPage::before {
+        display: none;
+    }
+
+    /* 2. Give the actual pages a solid black background */
+    #ProjectsPage,
+    #DetailPage,
+    #AboutPage {
+        background-color: #000000; /* Pure black (or use #131313 if you want your original dark gray) */
+        height: auto; 
+        min-height: 100vh;
+    }
+
+    /* ... Keep all your other existing mobile styles below this ... */
+    .ImageWithTextContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+   
     .ImageWithTextContainer {
         flex-direction: column;
         align-items: center;
@@ -452,7 +502,7 @@ article>a {
     } */
 
     .HeroBanner {
-        height: 10em;
+        /* height: 10em; */
     }
 
     .ImageWithTextContainer>article {

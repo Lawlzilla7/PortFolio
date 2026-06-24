@@ -1,0 +1,28 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_251_2)">
+<rect width="500" height="500" fill="#222222"/>
+<rect width="500" height="500" transform="matrix(-1 0 0 1 1000 0)" fill="url(#pattern0_251_2)"/>
+<rect x="500" y="500" width="500" height="500" fill="#222222"/>
+</g>
+<defs>
+<clipPath id="clip0_251_2">
+<rect width="1000" height="1000" fill="white"/>
+</clipPath>
+<pattern id="pattern0_251_2" patternUnits="userSpaceOnUse" patternTransform="matrix(89 0 0 89 0 0)" preserveAspectRatio="none" viewBox="0 0 100 100" width="1" height="1">
+<use xlink:href="#pattern0_251_2_inner" transform="translate(-100 -100)"/>
+<use xlink:href="#pattern0_251_2_inner" transform="translate(0 -100)"/>
+<use xlink:href="#pattern0_251_2_inner" transform="translate(-100 0)"/>
+<g id="pattern0_251_2_inner">
+<g clip-path="url(#clip1_251_2)">
+<path d="M200 0H0V200H200V0Z" fill="url(#pattern1_251_2)"/>
+</g>
+</g>
+</pattern><pattern id="pattern1_251_2" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_251_2" transform="scale(0.0909091)"/>
+</pattern>
+<clipPath id="clip1_251_2">
+<rect width="200" height="200" fill="white"/>
+</clipPath>
+<image id="image0_251_2" width="11" height="11" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAAXNSR0IArs4c6QAAAClJREFUGBljYGBg+A/FQIo4MKqBmHAiP5QYiTEeqAZkAxjAGTABHPR/AOR/FO1YjWwcAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
