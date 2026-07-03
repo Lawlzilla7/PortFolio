@@ -255,8 +255,7 @@ article>a {
 .TextContainer {
     display: flex;
     justify-content: center;
-    height: 50em;
-    background-color: rgb(255, 0, 0, 0.3);
+
 }
 
 .TitleContainer
