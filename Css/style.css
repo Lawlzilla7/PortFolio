@@ -86,10 +86,12 @@ li>a,
 #ProjectsPage,
 #DetailPage,
 #AboutPage {
-    position: relative; 
+    position: relative;
     width: 100vw;
-    height: 100vh; /* Optional: ensures the page takes up the full viewport height */
-    overflow: hidden; /* Crucial: hides the oversized corners of the pseudo-element */
+    height: 100vh;
+    /* Optional: ensures the page takes up the full viewport height */
+    overflow: hidden;
+    /* Crucial: hides the oversized corners of the pseudo-element */
     margin: 0px;
     padding-top: 70px;
     padding-bottom: 5em;
@@ -98,27 +100,28 @@ li>a,
 #ProjectsPage::before,
 #DetailPage::before,
 #AboutPage::before {
-    content: ""; 
-    position: absolute; 
-    
+    content: "";
+    position: absolute;
+
     /* 1. Center the element */
     top: 50%;
     left: 50%;
-    
+
     /* 2. Make it larger than 100% so the corners cover the screen when rotated */
-    width: 150vmax; 
-    height: 150vmax; 
-    
+    width: 150vmax;
+    height: 150vmax;
+
     /* 3. Center it using translate, THEN rotate it */
-    transform: translate(-50%, -50%) rotate(30deg); 
-    
-    z-index: -1; 
+    transform: translate(-50%, -50%) rotate(30deg);
+
+    z-index: -1;
 
     /* Image settings */
-    background-image: url("/Images/Frame%2018.png"); 
-    background-color: #131313;    
+    background-image: url("/Images/Frame%2018.png");
+    background-color: #131313;
     background-size: 32em;
-    background-repeat: repeat; /* Ensures the pattern tiles infinitely */
+    background-repeat: repeat;
+    /* Ensures the pattern tiles infinitely */
 }
 
 #DetailPage {
@@ -258,8 +261,7 @@ article>a {
 
 }
 
-.TitleContainer
-{
+.TitleContainer {
     display: flex;
 
 }
@@ -463,6 +465,7 @@ article>a {
 
 /*#region MediaQuery*/
 @media only screen and (max-width: 1281px) {
+
     #ProjectsPage::before,
     #DetailPage::before,
     #AboutPage::before {
@@ -473,8 +476,9 @@ article>a {
     #ProjectsPage,
     #DetailPage,
     #AboutPage {
-        background-color: #000000; /* Pure black (or use #131313 if you want your original dark gray) */
-        height: auto; 
+        background-color: #000000;
+        /* Pure black (or use #131313 if you want your original dark gray) */
+        height: auto;
         min-height: 100vh;
     }
 
@@ -484,7 +488,7 @@ article>a {
         align-items: center;
         gap: 1em;
     }
-   
+
     .ImageWithTextContainer {
         flex-direction: column;
         align-items: center;
@@ -732,3 +736,35 @@ article>a {
 }
 
 /*#endregion Frontpage*/
+
+
+/* #region Grid */
+.GridContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+    background-color: #00c3ff;
+    gap: 40px;
+}
+
+.GridImage {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    aspect-ratio: auto;
+}
+
+.GridTitle {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    aspect-ratio: auto;
+}
+
+.GridTitle h1 {
+    font-size: 64pt;
+}
+
+/* .GridContainer>div {
+    aspect-ratio: 1 / 1;
+} */
+
+/* #endregion Grid */
