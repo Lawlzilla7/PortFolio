@@ -54,9 +54,10 @@ header {
     box-shadow: 0 1px 8px #000000;
     background-color: rgb(56, 56, 56);
     z-index: 99;
-    
-    position: absolute; /* Changed from fixed so it doesn't follow you when scrolling */
-    
+
+    position: absolute;
+    /* Changed from fixed so it doesn't follow you when scrolling */
+
     width: 30%;
     border-radius: 50px;
     margin-top: 10px;
@@ -128,8 +129,8 @@ li>a,
     left: 50%;
 
     /* 2. Make it larger than 100% so the corners cover the screen when rotated */
-    width: 150vmax;
-    height: 150vmax;
+    width: 250vmax;
+    height: 250vmax;
 
     /* 3. Center it using translate, THEN rotate it */
     transform: translate(-50%, -50%) rotate(30deg);
@@ -794,174 +795,193 @@ article>a {
    ========================================== */
 
 .flex-poster-wrapper {
-  max-width: 95%;
-  margin: 0 auto;
-  padding: 40px;
-  color: #ffffff;
-  /* Main vertical stack */
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 40px;
+    color: #ffffff;
+    /* Main vertical stack */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 /* ==========================================
    1. Header (Flex Row)
    ========================================== */
 .flex-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
 }
 
 .poster-title {
-  flex: 1;
-  font-size: clamp(3rem, 6vw, 5.5rem);
-  font-weight: 900;
-  line-height: 0.9;
-  letter-spacing: -2px;
-  margin: 0;
-  padding-top: 1em;
+    flex: 1;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 0.1em;
+}
+
+.poster-title:nth-child(1) {
+    padding-top: 1em;
 }
 
 .poster-intro {
-  flex: 0 0 350px; /* Locks the width of the intro text */
+    flex: 0 0 350px;
+    /* Locks the width of the intro text */
 }
 
 .poster-intro p {
-  font-size: 0.85rem;
-  color: #ffffff;
-  line-height: 1.4;
-  margin: 0;
-  font-weight: bold;
+    font-size: 0.85rem;
+    color: #ffffff;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: bold;
 }
 
 /* ==========================================
    2. Banner Section (Flex Column)
    ========================================== */
 .flex-banner-wrapper {
-  display: flex;
-  flex-direction: column;
-  border: none; /* Removed Border */
+    display: flex;
+    flex-direction: column;
+    border: none;
+    /* Removed Border */
 }
 
 .banner-title-bar {
-  background-color: var(--g1);
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.25rem;
-  padding: 8px;
-  border: none;
+    background-color: var(--g1);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 8px;
+    border: none;
 }
 
 .banner-inner-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0; /* Removed padding so image spans full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    /* Removed padding so image spans full width */
 }
 
 .main-image-placeholder {
-  width: 100%;
-  aspect-ratio: 16 / 7;
-  background-color: transparent;
-  border: none; /* Removed Border */
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    background-color: transparent;
+    border: none;
+    /* Removed Border */
 }
 
 /* ==========================================
    3. Main Content Area (Flex Row)
    ========================================== */
 .flex-main-split {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
 /* --- Left Column: Text --- */
 .flex-text-column {
-  flex: 0 0 45%; /* Takes up exactly 45% of the parent */
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+    flex: 0 0 45%;
+    /* Takes up exactly 45% of the parent */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .flex-nested-text-row {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
 }
 
 .flex-nested-text-row .text-block {
-  flex: 1; /* Both inner text blocks take up 50% of the row */
+    flex: 1;
+    /* Both inner text blocks take up 50% of the row */
 }
 
 .text-block h2 {
-  color: var(--g1);
-  font-size: 1.35rem;
-  margin: 0 0 10px 0;
+    color: var(--g1);
+    font-size: 1.35rem;
+    margin: 0 0 10px 0;
 }
 
 .text-block p {
-  font-size: 0.88rem;
-  line-height: 1.5;
-  color: #d1d1d1;
-  margin: 0 0 10px 0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: #d1d1d1;
+    margin: 0 0 10px 0;
 }
 
 /* --- Right Column: Media --- */
 .flex-media-column {
-  flex: 1; /* Takes up the remaining 55% of the space */
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+    flex: 1;
+    /* Takes up the remaining 55% of the space */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .sketch-placeholder {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  background-color: transparent;
-  border: none; /* Removed Border */
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background-color: transparent;
+    border: none;
+    /* Removed Border */
 }
 
 /* 2x2 Grid made with Flexbox */
 .flex-screenshot-grid {
-  display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to the next line */
-  gap: 15px; 
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap to the next line */
+    gap: 15px;
 }
 
 .screenshot-item {
-  box-sizing: border-box; /* Forces padding/borders inside the width */
-  flex: 0 0 calc(50% - 7.5px); /* Creates the 2-column layout minus the gap */
-  aspect-ratio: 16 / 10;
-  background-color: #151a21;
-  border: none; /* Removed Border */
-  position: relative;
+    box-sizing: border-box;
+    /* Forces padding/borders inside the width */
+    flex: 0 0 calc(50% - 7.5px);
+    /* Creates the 2-column layout minus the gap */
+    aspect-ratio: 16 / 10;
+    background-color: #151a21;
+    border: none;
+    /* Removed Border */
+    position: relative;
 }
 
 .badge {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  color: white;
-  padding: 2px 7px;
-  font-size: 0.75rem;
-  font-weight: bold;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: white;
+    background-color: #000000;
+    padding: 2px 7px;
+    font-size: 0.75rem;
+    font-weight: bold;
 }
 
 /* ==========================================
    Responsive Overrides (Mobile formatting)
    ========================================== */
 @media (max-width: 1024px) {
-  .flex-header,
-  .flex-main-split,
-  .flex-nested-text-row {
-    flex-direction: column; /* Stacks everything vertically on small screens */
-  }
-  
-  .poster-intro,
-  .flex-text-column {
-    flex: auto;
-  }
+
+    .flex-header,
+    .flex-main-split,
+    .flex-nested-text-row {
+        flex-direction: column;
+        /* Stacks everything vertically on small screens */
+    }
+
+    .poster-intro,
+    .flex-text-column {
+        flex: auto;
+    }
 }
