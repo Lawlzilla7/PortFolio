@@ -23,45 +23,67 @@
     </header>
 
     <main id="DetailPage">
-        <img class="HeroBanner" src="./Images/clicker2.png" alt="">
-        <div class="TextContainer">
-            <H1 class="ProjectsText">Untitled Clicker Game</H1>
-        </div>
+        <article class="flex-poster-wrapper">
+            <header class="flex-header">
+                <div class="title-wrapper">
+                    <h1 class="poster-title">
+                        <span style="display: block;">UNTITLED</span>
+                        <span style="display: block;">CLICKER GAME</span>
+                    </h1>
+                </div>
+                <div class="poster-intro">
+                    <p>Untitled Clicker Game is a project I created for another game jam, with an even shorter
+                        development time than most jams. I managed to make this game in less than 10 hours for a school
+                        game jam.</p>
+                </div>
+            </header>
 
-        <div class="ImageWithTextContainer">
-            <img class="PageImage" src="./Images/Clicker.png" alt="" draggable="false">
-            <article>
-                <!-- <h2 class="AboutH2">Resource Clicker </h2> -->
-                <p>
-                    Untitled Clicker Game is a project I created for another game jam, with an even shorter development
-                    time than most jams. I managed to make this game in less than 10 hours for a school game jam held at
-                    the end of each school year.
-                </p>
-                <p>
-                    In this game, you can click on one of the three available resources: Factory, Farm, and Water. As
-                    you collect more resources, you can open the animated radial menus at the bottom. These menus,
-                    completely animated through code, allow you to purchase upgrades and automatic clickers. The
-                    objective is to gather as many resources as possible.
+            <figure class="flex-banner-wrapper" style="margin: 0;">
+                <div class="banner-inner-content">
+                    <div class="main-image-placeholder">
+                        <img src="./Images/clicker2.png" alt="Clicker Banner"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </figure>
 
-                </p>
-                <p>
-                    For this project, I challenged myself to maximize the juiciness of the game, aiming for smoothness
-                    without interrupting the gameplay. The most challenging aspect was creating all the animations with
-                    code, including the squishiness effect when clicking on resources and the radial menus. I built
-                    everything from scratch using C#, and I also created all the sprites and buttons myself.
-                </p>
-                <p>
-                    If you'd like to play the game yourself, you can download it below!
-                </p>
-                <p>
-                    <a href="./Downloads/2DClickerGame.zip" download>
-                        download the game here!(Windows only).
-                    </a>
-                </p>
-            </article>
-        </div>
+            <div class="flex-main-split">
+                <section class="flex-text-column">
+                    <section class="text-block">
+                        <h2>Resource Clicker:</h2>
+                        <p>In this game, you can click on one of the three available resources: Factory, Farm, and
+                            Water. As you collect more resources, you can open the animated radial menus at the bottom.
+                        </p>
+                    </section>
 
+                    <section class="text-block">
+                        <h2>The Objective:</h2>
+                        <p>These menus, completely animated through code, allow you to purchase upgrades and automatic
+                            clickers. The objective is to gather as many resources as possible.</p>
+                    </section>
 
+                    <section class="text-block">
+                        <h2>The Challenge:</h2>
+                        <p>For this project, I challenged myself to maximize the juiciness of the game, aiming for
+                            smoothness without interrupting the gameplay. The most challenging aspect was creating all
+                            the animations with code, including the squishiness effect when clicking on resources and
+                            the radial menus. I built everything from scratch using C#, and I also created all the
+                            sprites and buttons myself.</p>
+                        <a href="./Downloads/2DClickerGame.zip" download
+                            style="font-weight: bold; font-size: 1.1rem; text-decoration: none; display: inline-block; margin-top: 15px;">
+                            Download the game here! (Windows only)
+                        </a>
+                    </section>
+                </section>
+
+                <aside class="flex-media-column">
+                    <figure class="sketch-placeholder" style="margin: 0;">
+                        <img src="./Images/Clicker.png" alt="Clicker Gameplay"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </figure>
+                </aside>
+            </div>
+        </article>
     </main>
 
     <footer>

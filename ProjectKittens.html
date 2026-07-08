@@ -23,42 +23,65 @@
     </header>
 
     <main id="DetailPage">
-        <img class="HeroBanner" src="./Images/Kittens.png" alt="">
-        <div class="TextContainer">
-            <H1 class="ProjectsText">Mutiny in the moonlight</H1>
-        </div>
-        <div class="ImageWithTextContainer">
-            <img class="PageImage" src="./Images/Kittens2.png" alt="" draggable="false">
-            <article>
-                <h2 class="AboutH2">Mutiny in the moonlight AKA Bouncy boat</h2>
-                <p>
-                    Mutiny in the Moonlight, also known as Bouncy Boat, is an adventure game inspired by Oregon Trail,
-                    where you embark on a perilous journey as a pirate sailing the seven seas. The objective of the game
-                    is to reach the end of the journey while managing resources like food. Along the way, you encounter
-                    various islands where you can either purchase food with money or scavenge the island for resources.
-                </p>
-                <p>
-                    What makes this game particularly special to me is the fact that it combines 2D and 3D elements in
-                    an engine that didn't have built-in support for 3D modes at the time (Gamemaker 8.1). Due to this
-                    limitation, we had to employ creative solutions to work around the engine's constraints. For
-                    example, the level editor was entirely in 2D, which meant we could only position walls and objects
-                    that would always face the player since they were represented as 2D sprites
-                </p>
-                <p>
-                    My tasks during this project were a mix of 2D sprite work (boat, islands, and textures), animations
-                    for the boat, and general gameplay programming
-                </p>
-                <p>
-                    <a href="./Downloads/Mutiny in the moonlight-20230526T161503Z-001.zip" download>
-                        You can download the game here (Windows only).
-                    </a>
-                </p>
+        <article class="flex-poster-wrapper">
+            <header class="flex-header">
+                <div class="title-wrapper">
+                    <h1 class="poster-title">
+                        <span style="display: block;">MUTINY IN</span>
+                        <span style="display: block;">THE MOONLIGHT</span>
+                    </h1>
+                </div>
+                <div class="poster-intro">
+                    <p>Mutiny in the Moonlight, also known as Bouncy Boat, is an adventure game inspired by Oregon
+                        Trail, where you embark on a perilous journey as a pirate sailing the seven seas.</p>
+                </div>
+            </header>
 
+            <figure class="flex-banner-wrapper" style="margin: 0;">
+                <div class="banner-inner-content">
+                    <div class="main-image-placeholder">
+                        <img src="./Images/Kittens.png" alt="Kittens Banner"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </figure>
 
-            </article>
-        </div>
+            <div class="flex-main-split">
+                <section class="flex-text-column">
+                    <section class="text-block">
+                        <h2>The Objective:</h2>
+                        <p>The objective of the game is to reach the end of the journey while managing resources like
+                            food. Along the way, you encounter various islands where you can either purchase food with
+                            money or scavenge the island for resources.</p>
+                    </section>
+                    <section class="text-block">
+                        <h2>The Challenge:</h2>
+                        <p>What makes this game particularly special to me is the fact that it combines 2D and 3D
+                            elements in an engine that didn't have built-in support for 3D modes at the time (Gamemaker
+                            8.1). Due to this limitation, we had to employ creative solutions to work around the
+                            engine's constraints. For example, the level editor was entirely in 2D, which meant we could
+                            only position walls and objects that would always face the player since they were
+                            represented as 2D sprites.</p>
+                    </section>
+                    <section class="text-block">
+                        <h2>My Role:</h2>
+                        <p>My tasks during this project were a mix of 2D sprite work (boat, islands, and textures),
+                            animations for the boat, and general gameplay programming.</p>
+                        <a href="./Downloads/Mutiny in the moonlight-20230526T161503Z-001.zip" download
+                            style="font-weight: bold; font-size: 1.1rem; text-decoration: none; display: inline-block; margin-top: 15px;">
+                            Download the game here (Windows only).
+                        </a>
+                    </section>
+                </section>
 
-
+                <aside class="flex-media-column">
+                    <figure class="sketch-placeholder" style="margin: 0;">
+                        <img src="./Images/Kittens2.png" alt="Gameplay screenshot"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </figure>
+                </aside>
+            </div>
+        </article>
     </main>
 
     <footer>
