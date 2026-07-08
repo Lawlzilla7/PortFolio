@@ -23,72 +23,65 @@
     </header>
 
     <main id="DetailPage">
-        <article class="flex-poster-wrapper">
-            <header class="flex-header">
-                <div class="title-wrapper">
-                    <h1 class="poster-title">
-                        <span style="display: block;">WHERE IS</span>
-                        <span style="display: block;">WALLY</span>
-                    </h1>
-                </div>
-                <div class="poster-intro">
-                    <p>"Where's Wally" is a project I created for an introductory programming class. In this class, we
-                        were assigned the task of creating a JavaScript script that manipulates the Document Object
-                        Model (DOM).</p>
-                </div>
-            </header>
+<article class="flex-poster-wrapper">
+    <header class="flex-header">
+        <div class="title-wrapper">
+            <h1 class="poster-title">
+                <span style="display: block;">Where is</span>
+                <span style="display: block;">Wally</span>
+            </h1>
+        </div>
+        <div class="poster-intro">
+            <p>"Where's Wally" is a project I created for an introductory programming class. In this class, we were assigned the task of creating a JavaScript script that manipulates the Document Object Model (DOM).</p>
+        </div>
+    </header>
 
-            <figure class="flex-banner-wrapper" style="margin: 0;">
-                <div class="banner-inner-content">
-                    <div class="main-image-placeholder">
-                        <img src="./Images/WaldoBanner.png" alt="Wally Banner"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                </div>
-            </figure>
-
-            <div class="flex-main-split">
-                <section class="flex-text-column">
-
-                    <div class="flex-nested-text-row">
-                        <section class="text-block">
-                            <h2>Magnified Search:</h2>
-                            <p>For my project, I created a 'simple' search puzzle, where the goal is to find all of
-                                Wally's friends in an illustration. You can search the image by dragging your mouse over
-                                it, and a 'magnifying glass' with a zoomed-in image will appear.</p>
-                        </section>
-                        <section class="text-block">
-                            <h2>My goals:</h2>
-                            <p>"My goal as a designer in this project was to create an interactive version of 'Where's
-                                Waldo' on the web. I worked on this project for a total of 1 month. My aim was to do
-                                something a little extra for my first real project in JavaScript."</p>
-                        </section>
-                    </div>
-
-                    <section class="text-block">
-                        <h2>The Process:</h2>
-                        <p>While creating this project, I had to go through several steps. Firstly, I had to figure out
-                            how the canvas works and how to project an image onto it... I encountered a significant
-                            problem: I couldn't make the "buttons" work because they didn't move along with the image
-                            swipe.</p>
-                        <p>I decided to use a different approach, which involved a magnifying glass that users could
-                            move over the image, with an enlarged view inside it. I accomplished this by drawing two
-                            canvases... With this setup, I was able to make the buttons functional.</p>
-                        <a href="./eindopdracht-inleiding-programmeren_Furkan_Tura/index.html"
-                            style="font-weight: bold; font-size: 1.1rem; text-decoration: none; display: inline-block; margin-top: 15px;">
-                            Try it here!
-                        </a>
-                    </section>
-                </section>
-
-                <aside class="flex-media-column">
-                    <figure class="sketch-placeholder" style="margin: 0;">
-                        <img src="./Images/WallieMockUpWide.png" alt="Wally Mockup"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </figure>
-                </aside>
+    <figure class="flex-banner-wrapper" style="margin: 0;">
+        <div class="banner-inner-content">
+            <div class="main-image-placeholder">
+                <img src="./Images/WaldoBanner.png" alt="Wally Banner" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
-        </article>
+        </div>
+    </figure>
+
+    <div class="flex-main-split">
+        <section class="flex-text-column">
+            
+            <div class="flex-nested-text-row">
+                <section class="text-block">
+                    <h2>Magnified Search:</h2>
+                    <p>For my project, I created a 'simple' search puzzle, where the goal is to find all of Wally's friends in an illustration. You can search the image by dragging your mouse over it, and a 'magnifying glass' with a zoomed-in image will appear. Once you find a target, you can click on it to check it off the list.</p>
+                </section>
+                <section class="text-block">
+                    <h2>My goals and duration:</h2>
+                    <p>"My goal as a designer in this project was to create an interactive version of 'Where's Waldo' on the web. I worked on this project for a total of 1 month. My aim was to do something a little extra for my first real project in JavaScript because I believe that the best way to learn is by diving right in."</p>
+                </section>
+            </div>
+
+            <section class="text-block">
+                <h2>The Process:</h2>
+                <p>While creating this project, I had to go through several steps. Firstly, I had to figure out how the canvas works and how to project an image onto it. This was relatively easy to achieve. However, the most challenging part came next, which was finding a way to make the image interactive. I immediately came up with the idea of allowing users to zoom in and out with the mouse scroll wheel and swipe to move the image. This worked well, but I encountered a significant problem: I couldn't make the "buttons" work because they didn't move along with the image swipe. So, I had to come up with an alternative solution.</p>
+                <p style="margin-top: 10px;">I decided to use a different approach, which involved a magnifying glass that users could move over the image, with an enlarged view inside it. I accomplished this by drawing two canvases. The first canvas was visible to the user and displayed the main image, while the second canvas remained invisible and contained the zoomed-in image that was only visible within the magnifying glass. With this setup, I was able to make the buttons functional because they didn't need to move and remained in the same position.</p>
+                <p style="margin-top: 10px;">Towards the end of the project, I added some finishing touches, such as an explanation screen and a win condition for when all the targets had been found.</p>
+            </section>
+
+            <section class="text-block">
+                <h2>Try it out:</h2>
+                <p>If you'd like to try it for yourself, you can access it here. Please note that it might not work well on smaller or larger screens as it was designed for a 1080p screen with no image scaling.</p>
+                <a href="./eindopdracht-inleiding-programmeren_Furkan_Tura/index.html" style="font-size: 1.1rem; font-weight: bold; text-decoration: none; display: inline-block; margin-top: 15px;">
+                    Try it here!
+                </a>
+            </section>
+
+        </section>
+
+        <aside class="flex-media-column">
+            <figure class="sketch-placeholder" style="margin: 0;">
+                <img src="./Images/WallieMockUpWide.png" alt="Wally Mockup" style="width: 100%; height: 100%; object-fit: cover;">
+            </figure>
+        </aside>
+    </div>
+</article>
     </main>
 
     <footer>
